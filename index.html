@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bharti Kushwaha | Full Stack Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
+    body { background: #0a192f; color: #ccd6f6; animation: fadeIn 1s ease-in; }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    header { background: #112240; color: #64ffda; padding: 2rem; text-align: center; animation: slideDown 1s ease-out; }
+
+    @keyframes slideDown {
+      from { transform: translateY(-100%); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    .typing { font-size: 1.2rem; color: #8892b0; margin-top: 1rem; height: 1.5rem; overflow: hidden; white-space: nowrap; border-right: .15em solid #64ffda; animation: typing 4s steps(40, end) infinite alternate; }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    nav { margin-top: 1rem; }
+    nav a { color: #64ffda; margin: 0 1rem; text-decoration: none; font-weight: bold; transition: color 0.3s ease; }
+    nav a:hover { color: #8892b0; }
+
+    section { padding: 4rem 2rem; max-width: 1000px; margin: auto; animation: fadeInSection 1s ease forwards; opacity: 0; }
+
+    @keyframes fadeInSection {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h2 { color: #64ffda; margin-bottom: 1rem; font-size: 2rem; }
+    .projects, .skills, .certifications, .education, .achievements { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
+    .card { background: #112240; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.4); transition: transform 0.3s ease, background 0.3s ease; }
+    .card:hover { transform: translateY(-5px); background: #172a45; }
+
+    footer { background: #112240; color: #8892b0; text-align: center; padding: 2rem; margin-top: 2rem; animation: fadeIn 2s ease; font-size: 0.9rem; }
+
+    .btn { background: transparent; color: #64ffda; border: 1px solid #64ffda; padding: 0.7rem 1.5rem; border-radius: 5px; text-decoration: none; display: inline-block; margin-top: 1rem; transition: background 0.3s ease, color 0.3s ease; }
+    .btn:hover { background: #64ffda; color: #0a192f; }
+
+    a { color: #64ffda; text-decoration: none; }
+    a:hover { color: #8892b0; }
+
+    @media (max-width: 600px) {
+      nav a { display: block; margin: 0.5rem 0; }
+      section { padding: 2rem 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Bharti Kushwaha</h1>
+  <div class="typing">Full Stack Developer | Python, Java, SQL Enthusiast</div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#education">Education</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>I am a passionate Computer Science Engineering undergraduate at Jaypee University of Engineering and Technology, Guna. Skilled in backend development, automation, system-level programming, and building voice-driven interfaces. Hands-on with technologies like Whisper AI, TensorFlow, REST APIs, Node.js, Spring Boot, and SQLite. Strong academic background in Data Structures, Algorithms, OOP, and Operating Systems. Enthusiastic about problem-solving and crafting user-centric software solutions.</p>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects">
+    <div class="card">
+      <h3>SpeakBoard – Hands-Free Typing App</h3>
+      <p>Developed an offline Android speech-to-text application integrated with Whisper AI and TensorFlow, enabling real-time, hands-free typing and voice commands with 95%+ accuracy even offline.</p>
+    </div>
+    <div class="card">
+      <h3>WinBoost – Windows Debloater Tool</h3>
+      <p>Created an automation tool using PowerShell and Windows Registry tweaks to optimize OS performance by cleaning unnecessary services and improving boot time by 30%.</p>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div class="card">
+      <h3>Programming Languages</h3>
+      <p>Python, Java, C/C++, SQL, JavaScript</p>
+    </div>
+    <div class="card">
+      <h3>Frameworks & Tools</h3>
+      <p>Spring Boot, Node.js, Git/GitHub, PowerShell, Android Studio, Whisper AI, TensorFlow</p>
+    </div>
+    <div class="card">
+      <h3>Database Systems</h3>
+      <p>MySQL, SQLite</p>
+    </div>
+    <div class="card">
+      <h3>CS Fundamentals</h3>
+      <p>OOP, DSA, Operating Systems, DBMS, REST API design</p>
+    </div>
+  </div>
+</section>
+
+<section id="certifications">
+  <h2>Certifications</h2>
+  <div class="certifications">
+    <div class="card">
+      <h3>HackerRank Python (Intermediate)</h3>
+      <p>Focused on Python syntax, control flow, functions.</p>
+    </div>
+    <div class="card">
+      <h3>HackerRank Problem Solving</h3>
+      <p>Proficient in algorithms, arrays, sorting.</p>
+    </div>
+    <div class="card">
+      <h3>Infosys Springboard – Python Foundation Certificate</h3>
+      <p>Completed fundamental Python programming training.</p>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <div class="education">
+    <div class="card">
+      <h3>B.Tech in Computer Science Engineering</h3>
+      <p>Jaypee University of Engineering and Technology, Guna | 6.9 CGPA (Current)</p>
+    </div>
+    <div class="card">
+      <h3>Class XII (CBSE)</h3>
+      <p>Kendriya Vidyalaya Asansol | 83%</p>
+    </div>
+    <div class="card">
+      <h3>Class X (CBSE)</h3>
+      <p>Kendriya Vidyalaya Asansol | 95.1%</p>
+    </div>
+  </div>
+</section>
+
+<section id="achievements">
+  <h2>Achievements</h2>
+  <div class="achievements">
+    <div class="card">
+      <h3>150+ DSA Problems Solved</h3>
+      <p>Practiced extensively on LeetCode, enhancing algorithmic and problem-solving skills.</p>
+    </div>
+    <div class="card">
+      <h3>Eurogrip TORQ Challenge 3.0</h3>
+      <p>Participated in a national-level problem-solving and teamwork competition.</p>
+    </div>
+  </div>
+</section>
+
+<section id="resume">
+  <h2>Resume</h2>
+  <p>Download my detailed resume here:</p>
+  <a href="Bharti_Kushwaha_Python_Java_Developer.pdf" class="btn" download>Download Resume</a>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>I'd love to hear from you! Feel free to reach out:</p>
+  <p>Email: <a href="mailto:anjalikushwaha84261@gmail.com">anjalikushwaha84261@gmail.com</a></p>
+  <p>GitHub: <a href="https://github.com/Bhartikush" target="_blank">github.com/Bhartikush</a></p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/bharti-kushwaha-4308a4343/" target="_blank">linkedin.com/in/bharti-kushwaha-4308a4343</a></p>
+</section>
+
+<footer>
+  <p>&copy; 2025 Bharti Kushwaha | Full Stack Developer</p>
+</footer>
+
+</body>
+</html>
